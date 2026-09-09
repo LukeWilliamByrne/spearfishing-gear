@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gear for Sale — Luke's Spearfishing Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #23545A;
+    --deep: #0F3538;
+    --paper: #F4F0E6;
+    --sea: #4C8C82;
+    --coral: #E2724A;
+    --line: rgba(244, 240, 230, 0.14);
+    --muted: rgba(244, 240, 230, 0.62);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 36px;
+    margin-bottom: 48px;
+  }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--sea);
+    letter-spacing: 0.02em;
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(34px, 6vw, 54px);
+    line-height: 1.05;
+    margin: 14px 0 18px;
+    max-width: 14ch;
+  }
+  header p {
+    max-width: 60ch;
+    color: var(--muted);
+    font-size: 16px;
+  }
+  .items { display: flex; flex-direction: column; }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px 18px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .item:first-child { padding-top: 0; }
+  .gallery {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .thumb {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: var(--deep);
+    flex-shrink: 0;
+  }
+  .item-body { grid-column: 1; }
+  .item-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0 4px;
+  }
+  .item-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .cond { color: var(--sea); font-family: 'Inter', sans-serif; }
+  .link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12.5px;
+    color: var(--coral);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(226,114,74,0.4);
+  }
+  .prices { grid-column: 2; text-align: right; white-space: nowrap; align-self: start; }
+  .orig {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: line-through;
+    text-decoration-color: rgba(244,240,230,0.3);
+  }
+  .ask {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--coral);
+    margin-top: 2px;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .fine { font-size: 13.5px; color: var(--muted); max-width: 48ch; }
+  .badge {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--sea);
+    border: 1px solid var(--sea);
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
+  @media (max-width: 560px) {
+    .item { grid-template-columns: 1fr; }
+    .prices { grid-column: 1; text-align: left; margin-top: 4px; }
+    .thumb { width: 100px; height: 100px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Selling my spearfishing kit</h1>
+    <p>I'm selling all my spearfishing kit. I've since had a baby and have too many projects, so I need to offload all my stuff. A lot of it is brand new, unused, and some of it is only a little bit used. Pick up or drop off in Koh Phangan.</p>
+    <a class="badge" href="https://wa.me/85295024245" target="_blank" rel="noopener">WhatsApp +852 9502 4245</a>
+  </header>
+  <div class="items">
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/01.jpg" alt=""><img class="thumb" src="img/02.jpg" alt=""><img class="thumb" src="img/03.jpg" alt=""><img class="thumb" src="img/04.jpg" alt=""><img class="thumb" src="img/05.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Predathor Vuoto — pneumatic speargun, black, 85cm</p>
+        <p class="item-meta">Ref 1333307 · incl. Mono Cape monofilament line · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-predathor-vuoto-with-reel-pneumatic-speargun/1244270/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿7,258</div>
+        <div class="ask">฿5,081</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/06.jpg" alt=""><img class="thumb" src="img/07.jpg" alt=""><img class="thumb" src="img/08.jpg" alt=""><img class="thumb" src="img/09.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Picasso Magnum Power Sling — spearfishing gun, green camo, 90cm</p>
+        <p class="item-meta">Ref 8552963 · <span class="cond">Slightly used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/picasso-magnum-sling-speargun-90/602689/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿6,511</div>
+        <div class="ask">฿3,256</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/10.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Omer Black Stone spearfishing jacket — 3mm, size L</p>
+        <p class="item-meta">Ref 4296019 · <span class="cond">Slightly used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/omer-black-stone-spearfishing-jacket-3-mm/136312643/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿4,202</div>
+        <div class="ask">฿2,101</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/11.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Omer Black Stone spearfishing pants — 3mm, size L</p>
+        <p class="item-meta">Ref 4296013 · <span class="cond">Slightly used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/omer-black-stone-spearfishing-pants-3-mm/136312642/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿3,613</div>
+        <div class="ask">฿1,807</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/12.jpg" alt=""><img class="thumb" src="img/13.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar 45° spearshaft — 7.5mm, 970mm, single flopper</p>
+        <p class="item-meta">Ref 6854489 · qty 2 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-45-degree-angle-inox-17-4ph-sistema-vuoto-single-flopper-pneumatic-spearshaft-7.5-mm/136809328/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿1,028 ea.</div>
+        <div class="ask">฿720 ea.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/14.jpg" alt=""><img class="thumb" src="img/15.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Predathor pressure gauge — with charging adapter, gold</p>
+        <p class="item-meta">Ref 11093369 · qty 2 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-predathor-pressure-gauge-with-charging-adapter/137633238/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿1,090 ea.</div>
+        <div class="ask">฿763 ea.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/16.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar 45° Nozzle Washer Kit — stainless steel throat slider, 7.5mm</p>
+        <p class="item-meta">Ref 143129071 · qty 2 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-stainless-steel-45--nozzle-washer-mim-throat-slider-kit-7.5-mm/140826079/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿340 ea.</div>
+        <div class="ask">฿238 ea.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/17.jpg" alt=""><img class="thumb" src="img/18.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Mono Cape line — green, 1.5mm, 50m spool</p>
+        <p class="item-meta">Ref 400375G · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-mono-line-cape-1.50-mm/139403319/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿1,488</div>
+        <div class="ask">฿1,042</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/19.jpg" alt=""><img class="thumb" src="img/20.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Picasso Standard Reel — 50m, without line, black</p>
+        <p class="item-meta">Ref 769863 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/picasso-standard-without-line-50-m-reel/602819/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿791</div>
+        <div class="ask">฿554</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/21.jpg" alt=""><img class="thumb" src="img/22.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Mares Pure Passion Sealhouette SF spearfishing mask</p>
+        <p class="item-meta">Ref 6777454 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/mares-pure-passion-sealhouette-sf-spearfishing-mask/136794670/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿1,514</div>
+        <div class="ask">฿1,060</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/23.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Bite Air freediving snorkel — dark green</p>
+        <p class="item-meta">Ref 4385749 · <span class="cond">Slightly used</span></p>
+        
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿374</div>
+        <div class="ask">฿187</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/24.jpg" alt=""><img class="thumb" src="img/25.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Dy.Max gloves — green, XL</p>
+        <p class="item-meta">Ref 544018 · qty 2 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-dy.max-gloves/137314/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿383 /pair</div>
+        <div class="ask">฿268 /pair</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/26.jpg" alt=""><img class="thumb" src="img/27.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Dy.Max gloves — green, 2XL</p>
+        <p class="item-meta">Ref 544019 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-dy.max-gloves/137314/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿441</div>
+        <div class="ask">฿309</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/28.jpg" alt=""><img class="thumb" src="img/29.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Best Divers Marseilleise weight belt (with weights) + Salvimar Goemon knife, black</p>
+        <p class="item-meta">Ref 2243362 / 9749460 · <span class="cond">Slightly used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/best-divers-marseilleise-belt/135896892/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿952 + ฿1,274</div>
+        <div class="ask">฿476 + ฿637</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/30.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar Covered Torpedo Buoy — orange, with signal flag and line</p>
+        <p class="item-meta">Ref 544211 · <span class="cond">Used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-covered-torpedo-signaling-buoy/137394/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿826</div>
+        <div class="ask">฿248</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/31.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Omer fish stringer — stainless steel, 125cm</p>
+        <p class="item-meta">Ref 167282 · <span class="cond">Used</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/omer-fish-stringer-stainless-steel/31666/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿191</div>
+        <div class="ask">฿57</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/32.jpg" alt=""><img class="thumb" src="img/33.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Salvimar snap clip — grey, 5-pack</p>
+        <p class="item-meta">Ref 9749480 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/salvimar-snap-clip-5-units/137369885/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿379</div>
+        <div class="ask">฿265</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/34.jpg" alt=""><img class="thumb" src="img/35.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Sigalsub nylon drill wishbone — blue, 2-pack</p>
+        <p class="item-meta">Ref 12699274 · qty 2 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.diveinn.com/mergulho/sigalsub-nylon-drill-wishbones-2-units/138006992/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿146 ea.</div>
+        <div class="ask">฿102 ea.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/36.jpg" alt=""><img class="thumb" src="img/37.jpg" alt=""><img class="thumb" src="img/38.jpg" alt=""><img class="thumb" src="img/39.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Sigalsub spare barb for HRC — mono tip &amp; double, 7.5–8mm</p>
+        <p class="item-meta">Ref 8333707 / 8333709 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/sigalsub-hrc-pair-2-rivets-mono-tip-spare-barb/137098477/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿258 + ฿175</div>
+        <div class="ask">฿181 + ฿123</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="gallery"><img class="thumb" src="img/40.jpg" alt=""></div>
+      <div class="item-body">
+        <p class="item-name">Imersion axis pack — for barbs, 10-pack</p>
+        <p class="item-meta">Ref 16569522 · <span class="cond">Unused</span></p>
+        <a class="link" href="https://www.tradeinn.com/diveinn/en/imersion-pack-10-axis-barb/139032179/p" target="_blank" rel="noopener">View original listing (Diveinn)</a>
+      </div>
+      <div class="prices">
+        <div class="orig">what I originally paid: ฿63</div>
+        <div class="ask">฿44</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="fine">Pricing: unused items at 70% of original value, slightly used at 50%, used at 30%. Happy to bundle — ask if you want the Predathor set (gun + spares) together, or the wetsuit set (jacket + pants).</p>
+  </footer>
+</div>
+</body>
+</html>
