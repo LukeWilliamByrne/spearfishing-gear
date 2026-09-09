@@ -154,6 +154,12 @@
   .lb-next { right: 16px; top: 50%; transform: translateY(-50%); }
   @media (max-width: 600px) { .lb-prev, .lb-next { top: auto; bottom: 52px; transform: none; } .lb-cap { bottom: 110px; } }
   @media (prefers-reduced-motion: reduce) { .thumb { transition: none; } }
+
+  .item.sold .thumb { filter: grayscale(1); opacity: .55; }
+  .item.sold .item-name, .item.sold .item-meta, .item.sold .orig { opacity: .55; }
+  .item.sold .link { display: none; }
+  .item.sold .ask s { opacity: .5; font-weight: 500; }
+  .sold-tag { display: inline-block; background: var(--coral); color: var(--paper); font: 700 11px/1 "Space Grotesk", sans-serif; letter-spacing: .08em; padding: 5px 8px; border-radius: 6px; vertical-align: 2px; margin-right: 6px; }
 </style>
 </head>
 <body>
@@ -165,7 +171,7 @@
   </header>
   <div class="items">
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/01.jpg" alt=""><img class="thumb" src="img/02.jpg" alt=""><img class="thumb" src="img/03.jpg" alt=""><img class="thumb" src="img/04.jpg" alt=""><img class="thumb" src="img/45.jpg" alt=""><img class="thumb" src="img/19.jpg" alt=""><img class="thumb" src="img/20.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar Predathor Vuoto — pneumatic speargun, black, 85cm — Unused</p>
@@ -174,7 +180,7 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿7,258</div>
-        <div class="ask">฿5,100</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿5,100</s></div>
       </div>
     </div>
 
@@ -214,7 +220,7 @@
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/13.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar 45° spearshaft — 7.5mm, 970mm, single flopper — Unused</p>
@@ -223,11 +229,11 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿1,028 ea.</div>
-        <div class="ask">฿750 ea.</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿750 ea.</s></div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/14.jpg" alt=""><img class="thumb" src="img/15.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar Predathor pressure gauge — with charging adapter, gold — Unused</p>
@@ -236,11 +242,11 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿1,090 ea.</div>
-        <div class="ask">฿800 ea.</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿800 ea.</s></div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/16.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar Vuoto vacuum muzzle — 13mm barrel — Unused</p>
@@ -248,7 +254,7 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿1,090</div>
-        <div class="ask">฿750</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿750</s></div>
       </div>
     </div>
 
@@ -299,7 +305,7 @@
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/24.jpg" alt=""><img class="thumb" src="img/25.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar Dy.Max gloves — green, XL — Unused</p>
@@ -308,11 +314,11 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿383 /pair</div>
-        <div class="ask">฿300 /pair</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿300 /pair</s></div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/24.jpg" alt=""><img class="thumb" src="img/25.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Salvimar Dy.Max gloves — green, 2XL — Unused</p>
@@ -320,11 +326,11 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿441</div>
-        <div class="ask">฿350</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿350</s></div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="item sold">
       <div class="gallery"><img class="thumb" src="img/28.jpg" alt=""><img class="thumb" src="img/29.jpg" alt=""></div>
       <div class="item-body">
         <p class="item-name">Best Divers Marseilleise weight belt (with weights) + Salvimar Goemon knife, black — Slightly used</p>
@@ -332,7 +338,7 @@
       </div>
       <div class="prices">
         <div class="orig">what I originally paid: ฿952 + ฿1,274</div>
-        <div class="ask">฿500 + ฿650</div>
+        <div class="ask"><span class="sold-tag">SOLD</span> <s>฿500 + ฿650</s></div>
       </div>
     </div>
 
